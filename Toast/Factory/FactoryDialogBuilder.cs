@@ -5,7 +5,7 @@ using Toast.Enums;
 namespace Toast.Factory
 {
     
-    public static class MyDialogBuilder
+    public static class FactoryDialogBuilder
     {        
         public static AndroidX.AppCompat.App.AlertDialog.Builder CreateAlertDialog
             (Context context,
@@ -19,9 +19,12 @@ namespace Toast.Factory
         {
             AndroidX.AppCompat.App.AlertDialog.Builder dialog =
                 new AndroidX.AppCompat.App.AlertDialog.Builder(context);
-            dialog.SetTitle(title);
-            dialog.SetMessage(message);
-            
+            dialog.SetTitle(title)
+                  .SetMessage(message)
+                  .SetIcon(null)
+                  .SetMessage("")
+                  .Show();
+
             if (type == DialogAlerts.OnlyPositive)
             {
                 dialog.SetPositiveButton(positiveLabel, actionPositive);
