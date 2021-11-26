@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{0A9D6477-AFDD-4147-A4C1-5DDEFECB4411}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Toast/Factory/MyDialogBuilder.cs">
+    <Files>
+      <File FileName="Toast/MainActivity.cs" Line="52" Column="25" />
+      <File FileName="Toast/Resources/layout/activity_main.xml" Line="22" Column="42" />
+      <File FileName="Toast/Resources/layout/content_main.xml" />
+      <File FileName="Toast/Activities/SecondActivity.cs" />
+      <File FileName="Toast/Resources/layout/second_activity.xml" />
+      <File FileName="Toast/Factory/MyDialogBuilder.cs" Line="6" Column="5" NotebookId="1" />
+      <File FileName="Toast/Enums/DialogAlerts.cs" Line="8" Column="6" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Toast" expanded="True">
+            <Node name="Toast" expanded="True">
+              <Node name="Enums" expanded="True" />
+              <Node name="Factory" expanded="True">
+                <Node name="MyDialogBuilder.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Toast AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_3a_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

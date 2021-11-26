@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toast", "Toast\Toast.csproj", "{0A9D6477-AFDD-4147-A4C1-5DDEFECB4411}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A9D6477-AFDD-4147-A4C1-5DDEFECB4411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9D6477-AFDD-4147-A4C1-5DDEFECB4411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A9D6477-AFDD-4147-A4C1-5DDEFECB4411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A9D6477-AFDD-4147-A4C1-5DDEFECB4411}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4960884E-565F-4875-869D-2CE00CFAA3F9}
+	EndGlobalSection
+EndGlobal
