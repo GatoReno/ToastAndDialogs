@@ -1,22 +1,27 @@
 ﻿<Properties StartupConfiguration="{0A9D6477-AFDD-4147-A4C1-5DDEFECB4411}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Toast/Factory/MyDialogBuilder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Toast/Service/ServiceInitializer.cs">
     <Files>
-      <File FileName="Toast/MainActivity.cs" Line="52" Column="25" />
+      <File FileName="Toast/MainActivity.cs" Line="22" Column="6" />
       <File FileName="Toast/Resources/layout/activity_main.xml" Line="22" Column="42" />
       <File FileName="Toast/Resources/layout/content_main.xml" />
       <File FileName="Toast/Activities/SecondActivity.cs" />
       <File FileName="Toast/Resources/layout/second_activity.xml" />
-      <File FileName="Toast/Factory/MyDialogBuilder.cs" Line="6" Column="5" NotebookId="1" />
-      <File FileName="Toast/Enums/DialogAlerts.cs" Line="8" Column="6" NotebookId="1" />
+      <File FileName="Toast/Factory/MyDialogBuilder.cs" Line="9" Column="59" NotebookId="1" />
+      <File FileName="Toast/Enums/DialogAlerts.cs" Line="4" Column="12" NotebookId="1" />
+      <File FileName="Toast/Abstractions/IDialogService.cs" Line="12" Column="22" NotebookId="1" />
+      <File FileName="Toast/Abstractions/IContext.cs" Line="10" Column="34" NotebookId="1" />
+      <File FileName="Toast/Service/ServiceInitializer.cs" Line="4" Column="51" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Toast" expanded="True">
             <Node name="Toast" expanded="True">
+              <Node name="Abstractions" expanded="True" />
               <Node name="Enums" expanded="True" />
-              <Node name="Factory" expanded="True">
-                <Node name="MyDialogBuilder.cs" selected="True" />
+              <Node name="Factory" expanded="True" />
+              <Node name="Service" expanded="True">
+                <Node name="ServiceInitializer.cs" selected="True" />
               </Node>
             </Node>
           </Node>

@@ -10,6 +10,8 @@ using Google.Android.Material.Snackbar;
 using Toast.Activities;
 using Android.Content;
 using Toast.Factory;
+using Toast.Abstractions;
+using Toast.Service;
 
 namespace Toast
 {
@@ -21,10 +23,9 @@ namespace Toast
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
-
+            ServiceInitializer.Instance.Initialize(this);
             Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
-
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
 
@@ -33,12 +34,22 @@ namespace Toast
 
         private void CreateAlertDialogMethod(object sender, EventArgs e)
         {
-            AndroidX.AppCompat.App.AlertDialog.Builder dialog =
-                FactoryDialogBuilder.CreateAlertDialog
-                (this,"Dialog from factory","message from client",
-                "ok 🏭",Enums.DialogAlerts.OnlyPositive,null,null);
 
-            dialog.Show();
+            IDialogBuilder dialogBuilder = new SingletonDialogBuilder();
+            dialogBuilder
+                .SetTitle("title")
+                .SetMessage("Message")
+                .SetPositiveLabel("OK")
+                .SetPositiveAction(()=>
+                {
+                    string text = "My toast positive ✅";
+                    Android.Widget.ToastLength duration = Android.Widget.ToastLength.Short;
+                    var toast = Android.Widget.Toast.MakeText(this, text, duration);
+                    toast.Show();
+                });
+
+            IDialogService dialogService = dialogBuilder.BuildDiaalog();
+            dialogService.ShowDialog();
         }
 
         public void SetUpUI()
