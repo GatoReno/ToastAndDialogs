@@ -28,8 +28,23 @@ namespace Toast
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
 
+            SetUpUI();
+        }
+
+        private void CreateAlertDialogMethod(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder dialog =
+                FactoryDialogBuilder.CreateAlertDialog
+                (this,"Dialog from factory","message from client",
+                "ok 🏭",Enums.DialogAlerts.OnlyPositive,null,null);
+
+            dialog.Show();
+        }
+
+        public void SetUpUI()
+        {
             Android.Widget.Button toastBtn =
-                FindViewById<Android.Widget.Button>(Resource.Id.toastBtn);
+             FindViewById<Android.Widget.Button>(Resource.Id.toastBtn);
             toastBtn.Click += CreateAlertDialogMethod;
 
             Android.Widget.Button alertBtn =
@@ -39,19 +54,6 @@ namespace Toast
             Android.Widget.Button navBtn =
                 FindViewById<Android.Widget.Button>(Resource.Id.navBtn);
             navBtn.Click += NavBtn_Click;
-        }
-
-        private void CreateAlertDialogMethod(object sender, EventArgs e)
-        {
-            AndroidX.AppCompat.App.AlertDialog.Builder dialog =
-                MyDialogBuilder.CreateAlertDialog(
-                    this,
-                    "Dialog from factory",
-                    "message from client",
-                    "ok 🏭",
-                    null
-                    );
-            dialog.Show();
         }
 
         private void NavBtn_Click(object sender, EventArgs e)
