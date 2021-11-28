@@ -14,7 +14,17 @@ namespace Toast.Factory
         private Action _positiveAction, _negativeAction;
 
         EventHandler<DialogClickEventArgs> _actionPositive;
-        EventHandler<DialogClickEventArgs> _actionNegative;
+        EventHandler<DialogClickEventArgs> _actionNegative;              
+
+        void OnActionNegative(object sender, DialogClickEventArgs e)
+        {
+            _negativeAction?.Invoke();
+        }
+
+        void OnActionPositive(object sender, DialogClickEventArgs e)
+        {
+            _positiveAction?.Invoke();
+        }
 
         AndroidX.AppCompat.App.AlertDialog.Builder dialog;
 
@@ -26,16 +36,6 @@ namespace Toast.Factory
             _actionPositive += OnActionPositive;
         }
 
-        void OnActionNegative(object sender, DialogClickEventArgs e)
-        {
-            _negativeAction?.Invoke();
-        }
-
-        void OnActionPositive(object sender, DialogClickEventArgs e)
-        {
-            _positiveAction?.Invoke();
-        }
-       
         #region IDialogService
 
         public void ShowDialog()
