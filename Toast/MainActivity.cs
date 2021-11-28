@@ -9,9 +9,10 @@ using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.Snackbar;
 using Toast.Activities;
 using Android.Content;
-using Toast.Factory;
+
 using Toast.Abstractions;
 using Toast.Service;
+using Toast.Factory;
 
 namespace Toast
 {

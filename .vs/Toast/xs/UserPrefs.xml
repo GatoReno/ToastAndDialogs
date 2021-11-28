@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{0A9D6477-AFDD-4147-A4C1-5DDEFECB4411}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Toast/Factory/FactoryDialogBuilder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Toast/Factory/SingletonDialogBuilder.cs">
     <Files>
-      <File FileName="Toast/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Toast/MainActivity.cs" Line="34" Column="10" />
       <File FileName="Toast/Resources/layout/activity_main.xml" />
       <File FileName="Toast/Resources/layout/content_main.xml" />
       <File FileName="Toast/Activities/SecondActivity.cs" />
       <File FileName="Toast/Resources/layout/second_activity.xml" />
-      <File FileName="Toast/Enums/DialogAlerts.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Toast/Abstractions/IDialogService.cs" NotebookId="1" />
+      <File FileName="Toast/Enums/DialogAlerts.cs" Line="10" Column="1" NotebookId="1" />
+      <File FileName="Toast/Abstractions/IDialogService.cs" Line="9" Column="22" NotebookId="1" />
       <File FileName="Toast/Service/ServiceInitializer.cs" NotebookId="1" />
-      <File FileName="Toast/Abstractions/IServiceInit.cs" NotebookId="1" />
-      <File FileName="Toast/Factory/FactoryDialogBuilder.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Toast/Abstractions/IServiceInit.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Toast/Factory/FactoryDialogBuilder.cs" Line="10" Column="42" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,13 +18,11 @@
           <Node name="Toast" expanded="True">
             <Node name="Toast" expanded="True">
               <Node name="Abstractions" expanded="True" />
-              <Node name="Enums" expanded="True" />
+              <Node name="Activities" expanded="True" />
               <Node name="Factory" expanded="True">
-                <Node name="FactoryDialogBuilder.cs" selected="True" />
+                <Node name="SingletonDialogBuilder.cs" selected="True" />
               </Node>
-              <Node name="Service" expanded="True" />
             </Node>
-            <Node name="Toast.Core" expanded="True" />
           </Node>
         </State>
       </Pad>
