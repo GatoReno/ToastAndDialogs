@@ -65,11 +65,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Activities\SecondActivity.cs" />
     <Compile Include="Activities\BaseActivity.cs" />
-    <Compile Include="Factory\FactoryDialogBuilder.cs" />
-    <Compile Include="Enums\DialogAlerts.cs" />
-    <Compile Include="Abstractions\IDialogService.cs" />
     <Compile Include="Abstractions\IServiceInit.cs" />
     <Compile Include="Service\ServiceInitializer.cs" />
+    <Compile Include="Factory\SingletonDialogBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -114,7 +112,6 @@
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Activities\" />
-    <Folder Include="Enums\" />
     <Folder Include="Factory\" />
     <Folder Include="Abstractions\" />
     <Folder Include="Service\" />
@@ -123,6 +120,11 @@
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.5" />
     <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toast.Core\Toast.Core.csproj">
+      <Name>Toast.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

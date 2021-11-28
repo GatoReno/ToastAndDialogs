@@ -24,7 +24,6 @@ LinearLayout;obj/Debug/res/layout/content_main.xml
 LinearLayout;obj/Debug/res/layout/second_activity.xml
 menu;obj/Debug/res/menu/menu_main.xml
 paths;/Users/ed/Projects/Toast/Toast/obj/Debug/lp/38/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
-RelativeLayout;obj/Debug/res/layout/content_main.xml
 resources;obj/Debug/res/values/colors.xml
 resources;obj/Debug/res/values/dimens.xml
 resources;obj/Debug/res/values/ic_launcher_background.xml
@@ -32,4 +31,3 @@ resources;obj/Debug/res/values/strings.xml
 resources;obj/Debug/res/values/styles.xml
 string;obj/Debug/res/values/strings.xml
 style;obj/Debug/res/values/styles.xml
-TextView;obj/Debug/res/layout/content_main.xml
