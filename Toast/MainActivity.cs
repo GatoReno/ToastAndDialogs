@@ -58,7 +58,7 @@ namespace Toast
 
         private void NavBtn_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this, typeof(SecondActivity));
+            Intent intent = new Intent(this, typeof(Activities.TabActivity));
             StartActivity(intent);
         }
 

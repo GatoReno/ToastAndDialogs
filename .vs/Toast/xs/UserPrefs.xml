@@ -1,22 +1,31 @@
 ﻿<Properties StartupConfiguration="{0A9D6477-AFDD-4147-A4C1-5DDEFECB4411}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Toast/Factory/MyDialogBuilder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Toast/Activities/TabActivity.cs">
     <Files>
       <File FileName="Toast/MainActivity.cs" Line="52" Column="25" />
-      <File FileName="Toast/Resources/layout/activity_main.xml" Line="22" Column="42" />
+      <File FileName="Toast/Resources/layout/activity_main.xml" />
       <File FileName="Toast/Resources/layout/content_main.xml" />
-      <File FileName="Toast/Activities/SecondActivity.cs" />
-      <File FileName="Toast/Resources/layout/second_activity.xml" />
-      <File FileName="Toast/Factory/MyDialogBuilder.cs" Line="6" Column="5" NotebookId="1" />
-      <File FileName="Toast/Enums/DialogAlerts.cs" Line="8" Column="6" NotebookId="1" />
+      <File FileName="Toast/Activities/SecondActivity.cs" Line="12" Column="52" />
+      <File FileName="Toast/Resources/layout/second_activity.xml" Line="19" Column="16" />
+      <File FileName="Toast/Resources/menu/menu_main.xml" Line="1" Column="1" />
+      <File FileName="Toast/Resources/layout/tabbed_activity.xml" Line="37" Column="38" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Aapt2.targets" Line="157" Column="3" />
+      <File FileName="Toast/Resources/layout/fragment_two.xml" Line="10" Column="56" />
+      <File FileName="Toast/Resources/layout/fragment_one.xml" Line="11" Column="6" />
+      <File FileName="Toast/Fragments/FragmentOne.cs" Line="17" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Toast" expanded="True">
             <Node name="Toast" expanded="True">
-              <Node name="Enums" expanded="True" />
-              <Node name="Factory" expanded="True">
-                <Node name="MyDialogBuilder.cs" selected="True" />
+              <Node name="Activities" expanded="True">
+                <Node name="TabActivity.cs" selected="True" />
+              </Node>
+              <Node name="Factory" expanded="True" />
+              <Node name="Fragments" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+                <Node name="menu" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -24,7 +33,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Toast AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_3a_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.ItemProperties.Toast PreferredExecutionTarget="Android.pixel_3a_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

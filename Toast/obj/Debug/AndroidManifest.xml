@@ -17,6 +17,7 @@
       </intent-filter>
     </activity>
     <activity android:label="SecondActivity" android:name="crc64a7c15dd87c8d135e.SecondActivity" />
+    <activity android:label="TabActivity" android:name="crc64a7c15dd87c8d135e.TabActivity" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.EnergySaverBroadcastReceiver" />
