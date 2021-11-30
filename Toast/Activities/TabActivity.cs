@@ -29,18 +29,25 @@ namespace Toast.Activities
             SetContentView(Resource.Layout.tabbed_activity);
             this.SupportActionBar?.SetDisplayHomeAsUpEnabled(true);
 
-            tabLayout = FindViewById<TabLayout>(Resource.Id.tabLayoutG);            
-
-            //tabItem1 = tabLayout.FindViewById<TabItem>(Resource.Id.fragmentTab1);
+            tabLayout = FindViewById<TabLayout>(Resource.Id.tabLayoutG);
+            tabItem1 = (TabItem)FindViewById(Resource.Id.fragmentTab1);
+            tabItem2 = (TabItem)FindViewById(Resource.Id.fragmentTab2);
+            //tabLayout.AddTab(new TabLayout.Tab().SetText("Text1"));
+            //tabLayout.AddTab(new TabLayout.Tab().SetText("Text2"));
+            //tabItem1 = FindViewById<TabItem>(Resource.Id.fragmentTab1);
             //tabItem2 = tabLayout.FindViewById<TabItem>(Resource.Id.fragmentTab2);
 
             //tabItem1.Click += TabItem1_Click;
             //tabItem2.Click += TabItem2_Click;
 
+
+
             SupportFragmentManager.BeginTransaction()
                .Add(Resource.Id.frameFragmentsTabbed, new FragmentOne(), "item_fragment_one")
                .Commit();
         }
+
+
 
         private void TabItem2_Click(object sender, EventArgs e)
         {
